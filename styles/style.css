@@ -246,3 +246,61 @@ hr {
     padding: 5px;
     border-radius: 15px;
 }
+
+
+/* Media queries */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player,
+    .blog {
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 15px;
+    }
+    .blog-title {
+        margin-top: 0;
+        font-style: 16px;
+    }
+    .blog-author {
+        font-size: 12px;
+        margin-top: 0;
+    }
+}
+
+
+/* tablet devices */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .players {
+        padding-left: 20px;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+    }
+}
